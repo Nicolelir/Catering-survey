@@ -1,0 +1,30 @@
+body{
+  background-image:url("/assets/images/catering.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+    background-attachment: fixed;
+    color: rgb(245, 255, 250);
+  }
+  
+  
+  h1,p {
+    text-align:center;
+  }
+  
+  form{
+    background-color: rgba(45, 0, 100, 0.9);
+    color: rgb(245, 255, 250);
+    width: 140vw;
+    max-width: 700px;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 15px 15px 25px 10px;
+    }
+  
+  input, select {
+    width:100%;
+  }
+  textarea{
+    margin:auto;
+    width:100%;
+  }
