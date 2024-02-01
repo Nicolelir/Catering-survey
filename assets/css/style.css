@@ -3,22 +3,30 @@
 
 body{
   background-image:url("/assets/images/catering.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-    background-attachment: fixed;
-    color: rgb(245, 255, 250);
-    font-weight: 400;
-    line-height: 1.4;
-    margin:0;
-  }
-  
-div{
-  display:block;
+  background-position: center;
 }
 
+form, h1, .survey{
+  background-color:rgba(27, 27, 50, 0.8);
+  color: whitesmoke;
+  width: 140vw;
+  max-width: 700px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding: 30px;
+  }
+
+  label {
+  
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    vertical-align:top;
+  }
 
 .survey{
-color:black;
+color:whitesmoke;
 font-size: 1.3rem;
   }
 
@@ -36,38 +44,36 @@ font-size: 1.3rem;
     padding-bottom: 20px;
   }
 
-  h1,p {
-    text-align:center;
-    color:black;
+
+
+  #description{
+    text-align: center;
   }
   
-  form, h1, .survey{
-    background-color:rgba(27, 27, 50, 0.8);
-    color: whitesmoke;
-    width: 140vw;
-    max-width: 700px;
-    min-width: 350px;
-    margin: 0 auto;
-    padding: 30px;
-    }
-
-    #eventDate{
-      padding-bottom: 20px;
-    }
+  #title{
+    text-align: center;
+  }
   
+  
+    .content{
+      width: 100%;
+    }
+    
     input, select {
     width:100%;
-   
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px;
+    display: inline-flex;
   }
-
+  
 
   .area{
     width:100%;
   }
 
-  label{
-    display: inline;
-  }
+
 
 #submit{
 background-color: #37af65;
