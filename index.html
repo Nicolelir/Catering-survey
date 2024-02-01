@@ -11,83 +11,87 @@
 <body>
     
   <div class="content">
+    <header class="header">
     <h1 id="title"> Catering Survey Form</h1>
     <p id="description" class="survey"> We value your ideas!<br>
     Please help us to improve ourselves by completing this quick feedback survey about the catering service you had.</p> 
+    </header>
     
          <form id="survey-form" >
+        <div class="group">
+            <label id="name-label">Name</label>
+            <input id="name" type="text"placeholder="Enter your name" required pattern="[a-z]+[\s]{1}?([a-z]{2,})">
+        </div>
         
-            <label id="name-label">Name<input id="name"type="text"placeholder="Enter your name" required pattern="[a-z]+[\s]{1}?([a-z]{2,})"></label>
-            </br></br>
-            
-            <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required pattern="^[^@]+@[^@]+/.[a-zA-Z]{2,}$"></label>
-            </br></br>
-                
-            <label id="phone-number" >Phone number<input id="phone" type="number" placeholder="+353 4444 3333" pattern="\+569{1}[\s]?(\d{4,4}[\s]?)(\d{4,4}[\s]?)$"></label>
-            </br></br>
+        <div class="group">
+            <label id="email-label">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required pattern="^[^@]+@[^@]+/.[a-zA-Z]{2,}$">
+          </div>  
 
+            <div class="group">   
+            <label id="phone-number">Phone number</label>
+            <input id="phone" type="number" placeholder="+353 4444 3333" pattern="\+569{1}[\s]?(\d{4,4}[\s]?)(\d{4,4}[\s]?)$">
+          </div>  
+
+          <div class="group">  
             <label id="eventDate">Event Date</label>
             <input type="date" id="eventDate">
-          </br></br>
+          </div>  
 
           <hr>
           <div class="about">
-            <label class="text">How did you hear about us?</label>     
+            <p class="text">How did you hear about us?</p>     
             <select id="dropdown">
               <option value="Social Media"> Social Media</option>
               <option value="Internet"> Internet</option>
               <option value="Friends"> Friends</option>
               <option value="Other"> Other</option>
               </select>
-            </label>
           </div>
-            </br></br>
+            
           
-            <div class="time">
-            <label class="text">Was your service delivered on time?</label>
-            </br></br>
-            
-            <label><input type="radio" name="attribute" value="yes, right on time!"> Yes, right on time!</label>
-          </br>
-             <label><input type="radio" name="attribute" value="Could be faster">Could be faster</label>
-             </br>
-              <label><input type="radio" name="attribute" value="A bit late">A bit late</label>
-            </br>
-            <label><input type="radio" name="attribute" value="Delivered too late">Delivered too late</label>
-          </div>
-
-          <div class="menu">
-            <label class="text">What catering menu did you choose?</label>
-            <label><input type="checkbox" value="Canapes"></label>
-            </br>
-            
-            <label><input type="checkbox" value=""></label>
-            </br>
-            
-            <label><input type="checkbox"  value=""></label>
-            </br>
-            
-            <label><input type="checkbox" value=""></label>
-            </br></br>
-          </div>
-
-            <label class="text">Based on this event, how likely would you order from us again or recommend us to others?</label>
-            </br></br>
-            
-            <label><input type="radio" name="attribute" value="Definitely">Definitely</label>
-            </br>
-               <label><input type="radio" name="attribute" value="Maybe">Maybe</label>
-               </br>
-                <label><input type="radio" name="attribute" value="Not sure">Not sure</label>
-            
+            <div class="group">
+            <p class="text">Was your service delivered on time?</p>
         
+            <label>
+            <input type="radio" name="attribute" value="yes, right on time!"> Yes, right on time!</label>
+             <label><input type="radio" name="attribute" value="Could be faster">Could be faster</label>
+              <label><input type="radio" name="attribute" value="A bit late">A bit late</label>
+            <label><input type="radio" name="attribute" value="Delivered too late">Delivered too late</label>
+            </div>
+
+        
+            <div class="group">
+            <p class="text">What catering menu did you choose?</p>
+            <label>
+            <input type="checkbox" value="Canapes">Canapes</label>
+            <label>
+            <input type="checkbox" value="salads">Salads</label>
+            <label>
+            <input type="checkbox"  value="Kids Menu">Kids Menu</label>
+            <label>
+            <input type="checkbox" value="Packed Lunches">Packed Lunches</label>
+            </div>
             
-  <div class="comments">
-            <label class="text">Comments and suggestions?
+            <div class="group">
+            <p class="text">Based on this event, how likely would you order from us again or recommend us to others?</p>
+            
+            <label>
+            <input type="radio" name="attribute" value="Definitely">Definitely</label>
+      
+               <label>
+                <input type="radio" name="attribute" value="Maybe">Maybe</label>
+        
+                <label>
+                  <input type="radio" name="attribute" value="Not sure">Not sure</label>
+          </div>
+        
+  <div class="group">
+            <p class="text">Comments and suggestions?</p>
             <textarea class="area" rows="10" cols="50" placeholder="Enter your comment here..." ></textarea></label>
-            </br></br>
-            <input type="submit" value="submit" id="submit"> 
+            <input type="submit" value="Submit" id="submit"> 
     </div>
     </form>
+  </div>
 </body>
 </html>
