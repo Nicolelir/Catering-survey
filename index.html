@@ -10,10 +10,11 @@
 </head>
 <body>
     
-    <h1 id="title1"> Catering Survey Form</h1>
-    <p id="description" class="survey"> We value your ideas!
-         Please help us to improve ourselves by completing this quick feedback survey about the catering service you had.</p> 
-  
+  <div class="content">
+    <h1 id="title"> Catering Survey Form</h1>
+    <p id="description" class="survey"> We value your ideas!<br>
+    Please help us to improve ourselves by completing this quick feedback survey about the catering service you had.</p> 
+    
          <form id="survey-form" >
         
             <label id="name-label">Name<input id="name"type="text"placeholder="Enter your name" required pattern="[a-z]+[\s]{1}?([a-z]{2,})"></label>
@@ -22,14 +23,16 @@
             <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required pattern="^[^@]+@[^@]+/.[a-zA-Z]{2,}$"></label>
             </br></br>
                 
-            <label id="phone-number">Phone number<input id="phone" type="number" placeholder="+353 4444 3333" pattern="\+569{1}[\s]?(\d{4,4}[\s]?)(\d{4,4}[\s]?)$"></label>
+            <label id="phone-number" >Phone number<input id="phone" type="number" placeholder="+353 4444 3333" pattern="\+569{1}[\s]?(\d{4,4}[\s]?)(\d{4,4}[\s]?)$"></label>
             </br></br>
 
-            <label id="eventDate" class="form-label">Event Date</label>
+            <label id="eventDate">Event Date</label>
             <input type="date" id="eventDate">
           </br></br>
 
-            <label>How did you hear about us?</label>     
+          <hr>
+          <div class="about">
+            <label class="text">How did you hear about us?</label>     
             <select id="dropdown">
               <option value="Social Media"> Social Media</option>
               <option value="Internet"> Internet</option>
@@ -37,10 +40,11 @@
               <option value="Other"> Other</option>
               </select>
             </label>
-            
+          </div>
             </br></br>
-      
-            <label>Was your service delivered on time?</label>
+          
+            <div class="time">
+            <label class="text">Was your service delivered on time?</label>
             </br></br>
             
             <label><input type="radio" name="attribute" value="yes, right on time!"> Yes, right on time!</label>
@@ -50,10 +54,11 @@
               <label><input type="radio" name="attribute" value="A bit late">A bit late</label>
             </br>
             <label><input type="radio" name="attribute" value="Delivered too late">Delivered too late</label>
+          </div>
 
-
-            <label>Was catering menu did you choose?</label>
-            <label><input type="checkbox" value=""></label>
+          <div class="menu">
+            <label class="text">What catering menu did you choose?</label>
+            <label><input type="checkbox" value="Canapes"></label>
             </br>
             
             <label><input type="checkbox" value=""></label>
@@ -64,8 +69,9 @@
             
             <label><input type="checkbox" value=""></label>
             </br></br>
+          </div>
 
-            <label>Based on this event, how likely would you order from us again or recommend us to others?</label>
+            <label class="text">Based on this event, how likely would you order from us again or recommend us to others?</label>
             </br></br>
             
             <label><input type="radio" name="attribute" value="Definitely">Definitely</label>
@@ -74,15 +80,14 @@
                </br>
                 <label><input type="radio" name="attribute" value="Not sure">Not sure</label>
             
-            </br></br>
+        
             
-  
-            <label>Comments and suggestions?
-              </br></br>
-            <textarea rows="10" cols="50" placeholder="Enter your comment here..." ></textarea></label>
+  <div class="comments">
+            <label class="text">Comments and suggestions?
+            <textarea class="area" rows="10" cols="50" placeholder="Enter your comment here..." ></textarea></label>
             </br></br>
             <input type="submit" value="submit" id="submit"> 
-             
+    </div>
     </form>
 </body>
 </html>
